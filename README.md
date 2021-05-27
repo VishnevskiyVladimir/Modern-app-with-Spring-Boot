@@ -1,4 +1,4 @@
-Short but very good course about stuff used in modern java applications:
+# Short but very good course about stuff used in modern java applications:
    - Gradle
    - Spring Boot
    - Spring Data Jpa
