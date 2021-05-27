@@ -1,21 +1,15 @@
 package com.example.springboot.lesson.repository;
 
+import com.example.springboot.lesson.IntegrationTestBase;
 import com.example.springboot.lesson.entity.CompanyEntity;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.ActiveProfiles;
-import org.springframework.transaction.annotation.Transactional;
-
 
 import static org.junit.jupiter.api.Assertions.*;
 
-@SpringBootTest
-@ActiveProfiles("test")
-@Transactional
-class CompanyRepositoryTest {
+class CompanyRepositoryTest extends IntegrationTestBase {
 
     private static final Integer APPLE_ID = 1;
     private static final Integer GOOGLE_ID = 2;
@@ -25,14 +19,6 @@ class CompanyRepositoryTest {
 
     @Autowired
     CompanyRepository companyRepository;
-
-    @BeforeEach
-    void setUp() {
-    }
-
-    @AfterEach
-    void tearDown() {
-    }
 
     @Test
     void getByIdTest() {
