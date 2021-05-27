@@ -1,2 +1,4 @@
 com/example/springboot/lesson/service/GreetingServiceTest.java
  com.example.springboot.lesson.service.GreetingServiceTest
+com/example/springboot/lesson/repository/CompanyRepositoryTest.java
+ com.example.springboot.lesson.repository.CompanyRepositoryTest
